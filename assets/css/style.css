@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.sctn {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col-3 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.imgbox img {
+    width: 100%;
+}
+
+.imgbox {
+    background: #FFF;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+    padding-bottom: 10px;
+}
+
+.text h2 {
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123.6%;
+    margin: 3%;
+}
+
+.text p {
+    width: 100%;
+    color: #7B7B7B;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.6%;
+    margin: 3%;
+}
+
+.pstn-rel {
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-box {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: 0.3s;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.icon-box span {
+    background-color: #FFF;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 2px;
+    padding: 2px;
+    transition: 0.3s;
+}
+
+.col-3:hover .icon-box {
+    right: 0.5px;
+}
+
+.icon-box span:hover svg path {
+    fill: white;
+}
+
+.icon-box span:hover {
+    background: #FF5300;
+    box-shadow: 1px 7px 10px 0px rgba(255, 83, 0, 0.50);
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+@media (min-width:320px) {
+    .col-sm-12 {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width:576px) {
+    .col-md-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width:992px) {
+    .col-xl-4 {
+        width: 33.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width:1400px) {
+    .col-2xl-3 {
+        width: 25%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}

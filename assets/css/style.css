@@ -141,8 +141,8 @@
     }
 }
 
-@media (min-width:1400px) {
-    .col-2xl-3 {
+@media (min-width:1200px) {
+    .col-xl-3 {
         width: 25%;
         padding-left: 12px;
         padding-right: 12px;
